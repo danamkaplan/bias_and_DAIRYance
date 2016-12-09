@@ -10,7 +10,6 @@ def clean(df):
     #df['Coupler_System'] = pd.get_dummies(df['Coupler_System'])['Yes']
 
 
-
     #creates categorical values for 6 different product groups
     #sets baseline of variable 'TEX' as our most frequently sold type
     prod_groups = pd.get_dummies(df['ProductGroup']).drop('TEX', axis=1)
